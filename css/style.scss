@@ -228,7 +228,8 @@ section {
       left: 0;
       height: 100%;
       width: 100%;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), transparent);
+      // background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), transparent);
+      background: linear-gradient(rgba(155, 155, 155, 0.100), rgba(155, 155, 155, 0.100));
     }
 
     .content {
@@ -238,13 +239,20 @@ section {
       h3 {
         @include titleText(4.5rem);
         text-transform: uppercase;
+        color: var(--black) !important;
       }
 
       p {
         @include graphText(1.8rem);
         color: var(--black) !important;
+        // color: var(--white) !important;
         padding: 1rem 0;
       }
+
+      // a {
+      //   color: var(--black);
+      //   background: var(--white);
+      // }
     }
   }
 

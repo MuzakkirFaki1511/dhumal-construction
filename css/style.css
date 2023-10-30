@@ -216,7 +216,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(rgba(155, 155, 155, 0.1), rgba(155, 155, 155, 0.1));
 }
 .home .slide .content {
   width: 50rem;
@@ -227,6 +227,7 @@ section {
   color: var(--black);
   text-transform: capitalize;
   text-transform: uppercase;
+  color: var(--black) !important;
 }
 .home .slide .content p {
   font-size: 1.8rem;
