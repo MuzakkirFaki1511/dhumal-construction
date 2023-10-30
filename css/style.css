@@ -216,7 +216,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, var(--white), transparent);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), transparent);
 }
 .home .slide .content {
   width: 50rem;
@@ -232,6 +232,7 @@ section {
   font-size: 1.8rem;
   color: var(--light-color);
   line-height: 2;
+  color: var(--black) !important;
   padding: 1rem 0;
 }
 .home .swiper-button-next,
@@ -369,7 +370,7 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.2s linear;
 }
 .projects .box-container .box .content {
@@ -552,7 +553,7 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.2s linear;
 }
 .blogs .slide .content {
@@ -583,8 +584,8 @@ section {
   height: 10rem;
   pointer-events: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .footer {
@@ -631,12 +632,12 @@ section {
     border-top: var(--border);
     border-bottom: var(--border);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.2s linear;
   }
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   .header .navbar a {
     display: block;
@@ -658,4 +659,38 @@ section {
   html {
     font-size: 50%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.call-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  left: 40px;
+  background-color: #78a9ed;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
