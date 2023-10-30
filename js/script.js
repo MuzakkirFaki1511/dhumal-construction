@@ -99,3 +99,10 @@ var swiper = new Swiper(".logo-slider", {
     },
   },
 });
+
+// Initialize LightGallery for the videos section
+lightGallery(document.querySelector(".videos .box-container"), {
+  selector: ".box",
+  videoMaxWidth: "1000px", // Set the max width for videos
+  download: false, // Disable video download option
+});
